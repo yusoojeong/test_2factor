@@ -5,7 +5,6 @@ import pyotp
 import qrcode
 
 app = FastAPI()
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
 # 사용자 데이터베이스 (예: 사용자 시크릿 키 저장소)
