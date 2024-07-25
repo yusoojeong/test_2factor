@@ -1,15 +1,13 @@
-from datetime import timedelta
+
 import io
 
-from fastapi import FastAPI, Depends, HTTPException, status, Form, Response
+from fastapi import FastAPI, HTTPException, status, Form, Response
 from fastapi.security import OAuth2PasswordBearer
 
 import pyotp
 import qrcode
 
-from helpers import (
-    create_access_token, verify_access_token, ACCESS_TOKEN_EXPIRE_MINUTES
-)
+from helpers import create_access_token, verify_access_token
 
 
 app = FastAPI()

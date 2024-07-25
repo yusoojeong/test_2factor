@@ -5,6 +5,7 @@ from fastapi import HTTPException, status
 
 import jwt
 
+
 SECRET_KEY = "your_secret_key"  # JWT 서명에 사용할 비밀 키
 TEMP_SECRET_KEY = "your_temp_secret_key"  # 임시 JWT 서명에 사용할 비밀 키
 ALGORITHM = "HS256"  # JWT 서명 알고리즘
